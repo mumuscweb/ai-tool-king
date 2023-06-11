@@ -110,16 +110,25 @@ a:hover {
     font-weight: 900;
     line-height: 1.2;
     margin-top: 3rem;
+    margin-bottom: 7.5rem;
+    display: flex;
+    flex-direction: column;
 }
 .banner-text .btn {
     font-size: 1.25rem;
     padding: 1.25rem 2.5rem;
 }
+.banner-text div:nth-child(2) {
+    font-size: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
 
 /* leaf animation start */
 .leaf-animation {
     display: flex;
-    justify-content: flex-end;
     overflow: hidden;
 }
 
@@ -533,7 +542,127 @@ a:hover {
 .secondary-nav ul a:hover {
     opacity: .8;
 }
+
+
+
+
+
 /*---- price ----*/
+.our-price {
+    margin: 10rem 0;
+}
+.our-price .title {
+    font-weight: bold;
+}
+.price-list {
+    margin-top: 5rem;
+}
+.price-list .box {
+    border: 1px solid #525252;
+    border-radius: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.box-content {
+    min-height: 255px;
+}
+.box-content .title {
+    font-size: 2rem;
+    padding: 1.25rem 0 0 2rem ;
+}
+.box-content ul {
+    list-style: initial;
+    color: #ccc;
+    padding-left: 4rem;
+    margin-bottom: auto;
+}
+.box-price {
+    padding: 1.25rem 2rem ;
+    border-top: 1px solid #525252;
+    display: flex;
+    justify-content: space-between;
+}
+.box-price .text {
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+.box-price .text span {
+    font-weight: 400;
+    color: #aaa;
+}
+
+
+
+.terms-content {
+    margin: 10rem 0 5rem;
+}
+.terms-content ul li {
+    font-size: 2rem;
+    border-bottom: 1px solid #525252;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.terms-content ul li .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.qna-wrap {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .qna-item {
+    border: 1px solid #525252;
+    border-radius: 1rem;
+    margin: 0 0 1.25rem;
+    padding: 1.25rem 2.5rem;
+  }
+  .qna-item:hover {
+    border-color: #fff;
+    transition: all 0.15s ease-in-out;
+  }
+  .qna-item:has(.show) {
+    border-color: #fff;
+  }
+  
+  .qna-header {
+    margin-bottom: 0;
+  }
+  
+  .qna-button {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .qna-button::before {
+    flex-shrink: 0;
+    margin-right: 1rem;
+    content: "+";
+    background-image: url("");
+  }
+  .qna-button:not(.collapsed)::before {
+    content: "-";
+  }
+  
+  .qna-body {
+    padding-top: 1rem;
+  }
+
+
+
+
+
 
 /*---- RWD ----*/
 @media (min-width: 768px) {
@@ -580,6 +709,10 @@ a:hover {
 
     .banner-text .btn {
         margin-top: 3rem;
+    }
+    .banner-text div:nth-child(2) {
+        font-size: 1.75rem;
+        width: 70%;
     }
 
     .service-content .title {
@@ -631,6 +764,30 @@ a:hover {
     }
     .secondary-nav ul a {
         font-size: 3rem;
+    }
+    .our-price {
+        margin: 7.5rem 0;
+    }
+    .our-price .title {
+        font-size: 1.25rem;
+    }
+    .price-list {
+        margin-top: 1rem;
+    }
+    .box-content {
+        min-height: 175px;
+    }
+    .terms-content {
+        margin-top: 7.5rem;
+    }
+    .terms-content > .title {
+        margin-bottom: 3rem;
+    }
+    .terms-content ul li {
+        font-size: 1rem;
+    }
+    .terms-content ul li .title {
+        font-size: 2rem;
     }
 
 }
