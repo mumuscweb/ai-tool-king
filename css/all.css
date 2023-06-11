@@ -9,7 +9,9 @@ body {
     font-size: 16px;
 }
 
-.header, .main-content, .footer{
+.header,
+.main-content,
+.footer {
     max-width: 1296px;
     margin: 0 auto;
 }
@@ -37,6 +39,17 @@ a:hover {
 
 .btn {
     border-radius: 1rem;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: rgb(0 0 0 / 57%);
+    border-radius: 5px;
+    display: none;
 }
 
 
@@ -114,10 +127,12 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+
 .banner-text .btn {
     font-size: 1.25rem;
     padding: 1.25rem 2.5rem;
 }
+
 .banner-text div:nth-child(2) {
     font-size: 3rem;
     width: 50%;
@@ -362,10 +377,12 @@ a:hover {
     margin-bottom: 1em;
     color: #020202;
 }
+
 .aiTool-content {
     max-width: 1296px;
     margin: auto;
 }
+
 .aiTool-wrap h2.title {
     font-size: 5rem;
     text-align: center;
@@ -377,12 +394,14 @@ a:hover {
     position: relative;
     margin: 0 auto 2.75rem;
 }
+
 .search-bar .bi-search {
     position: absolute;
     top: 1.25rem;
     left: 2rem;
     color: #919191;
 }
+
 .search-bar .search-input {
     width: 100%;
     border-radius: 1rem;
@@ -391,6 +410,7 @@ a:hover {
     padding: 1.25rem 2.5rem;
     padding-left: 4rem;
 }
+
 .search-bar .search-input:focus-visible {
     outline-color: #aae4f5;
 }
@@ -403,9 +423,11 @@ a:hover {
     align-items: center;
     margin-bottom: 2.5rem;
 }
+
 .filter-btn .dropdown-toggle::after {
     display: none;
 }
+
 .filter-bar .btn-outline-dark {
     border-color: #f2f2f2;
     padding: 1.25rem 2.5rem;
@@ -417,6 +439,7 @@ a:hover {
     margin: 0 auto;
     max-width: 80ch;
 }
+
 .catrgory-group .btn-light {
     border: 0;
     background-color: transparent;
@@ -424,6 +447,7 @@ a:hover {
     margin: 0 0.75rem;
     white-space: nowrap;
 }
+
 .catrgory-group .btn-light.active,
 .catrgory-group .btn-light:hover {
     background-color: #f2f2f2;
@@ -438,6 +462,7 @@ a:hover {
     flex-direction: column;
     height: 100%;
 }
+
 .card-box a {
     display: block;
     overflow: hidden;
@@ -445,28 +470,34 @@ a:hover {
     border-top-left-radius: 1em;
     color: #020202;
 }
+
 .card-box a img {
     width: 100%;
     transition: transform 0.3s ease-in;
 }
+
 .card-box a img:hover {
     transform: scale(1.2);
 }
+
 .card-box .card-content {
     padding: 1.25em 2em;
     margin-bottom: auto;
 }
+
 .card-box .card-content .title {
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 1.25rem;
 }
+
 .card-box .card-content p.text {
     margin: 0;
     color: #525252;
     font-size: 14px;
 }
+
 .card-box .card-info>div {
     display: flex;
     flex-wrap: wrap;
@@ -474,12 +505,15 @@ a:hover {
     border-top: 1px solid #f2f2f2;
     padding: 1.25em 2em;
 }
+
 .card-box .card-info a:hover {
     opacity: 0.8;
 }
+
 .card-box .card-info .aiType-tag {
     font-weight: bold;
 }
+
 .share-icon {
     display: inline-block;
     font-size: 1rem;
@@ -490,10 +524,12 @@ a:hover {
     justify-content: flex-end;
     margin-top: 2em;
 }
+
 .page-item:first-child .page-link,
 .page-item:last-child .page-link {
     border-radius: 1rem;
 }
+
 .pagination-content .page-link {
     width: 48px;
     height: 48px;
@@ -504,21 +540,25 @@ a:hover {
     border-radius: 1rem;
     margin: 0 0.5rem;
 }
+
 .pagination-content .page-link.active,
-.pagination-content .page-link:hover  {
+.pagination-content .page-link:hover {
     color: #fff;
     background-color: #020202;
 }
+
 .slogan {
     text-align: center;
     border-bottom: 1px solid #fff;
     padding: 10rem 0;
 }
+
 .slogan .title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 3rem;
 }
+
 .slogan .btn {
     font-size: 1.25rem;
     padding: 1.25rem 2.5rem;
@@ -530,15 +570,18 @@ a:hover {
     align-items: flex-start;
     padding: 5rem 0;
 }
+
 .secondary-nav ul {
     display: flex;
     flex-direction: column;
 }
+
 .secondary-nav ul a {
     font-size: 5rem;
     font-weight: bold;
     line-height: 1.2;
 }
+
 .secondary-nav ul a:hover {
     opacity: .8;
 }
@@ -551,12 +594,15 @@ a:hover {
 .our-price {
     margin: 10rem 0;
 }
+
 .our-price .title {
     font-weight: bold;
 }
+
 .price-list {
     margin-top: 5rem;
 }
+
 .price-list .box {
     border: 1px solid #525252;
     border-radius: 1rem;
@@ -567,32 +613,39 @@ a:hover {
     transition: border-color .35s ease-in-out;
 
 }
+
 .price-list .box:hover {
     border-color: #fff;
 }
+
 .box-content {
     min-height: 255px;
 }
+
 .box-content .title {
     font-size: 2rem;
-    padding: 1.25rem 0 0 2rem ;
+    padding: 1.25rem 0 0 2rem;
 }
+
 .box-content ul {
     list-style: initial;
     color: #ccc;
     padding-left: 4rem;
     margin-bottom: auto;
 }
+
 .box-price {
-    padding: 1.25rem 2rem ;
+    padding: 1.25rem 2rem;
     border-top: 1px solid #525252;
     display: flex;
     justify-content: space-between;
 }
+
 .box-price .text {
     font-weight: 900;
     font-size: 1.25rem;
 }
+
 .box-price .text span {
     font-weight: 400;
     color: #aaa;
@@ -603,12 +656,14 @@ a:hover {
 .terms-content {
     margin: 10rem 0 5rem;
 }
+
 .terms-content ul li {
     font-size: 2rem;
     border-bottom: 1px solid #525252;
     padding-bottom: 2.5rem;
     margin-bottom: 2.5rem;
 }
+
 .terms-content ul li .title {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -620,27 +675,29 @@ a:hover {
     margin: 0 auto;
     padding: 5rem 1rem;
     border-bottom: 1px solid #fff;
-  }
-  
-  .qna-item {
+}
+
+.qna-item {
     border: 1px solid #525252;
     border-radius: 1rem;
     margin: 0 0 1.25rem;
     padding: 1.25rem 2.5rem;
-  }
-  .qna-item:hover {
+}
+
+.qna-item:hover {
     border-color: #fff;
     transition: all 0.15s ease-in-out;
-  }
-  .qna-item:has(.show) {
+}
+
+.qna-item:has(.show) {
     border-color: #fff;
-  }
-  
-  .qna-header {
+}
+
+.qna-header {
     margin-bottom: 0;
-  }
-  
-  .qna-button {
+}
+
+.qna-button {
     width: 100%;
     font-size: 1.25rem;
     text-align: left;
@@ -650,20 +707,22 @@ a:hover {
     padding: 0;
     display: flex;
     align-items: center;
-  }
-  .qna-button::before {
+}
+
+.qna-button::before {
     flex-shrink: 0;
     margin-right: 1rem;
     content: "+";
     background-image: url("");
-  }
-  .qna-button:not(.collapsed)::before {
+}
+
+.qna-button:not(.collapsed)::before {
     content: "-";
-  }
-  
-  .qna-body {
+}
+
+.qna-body {
     padding-top: 1rem;
-  }
+}
 
 
 
@@ -716,6 +775,7 @@ a:hover {
     .banner-text .btn {
         margin-top: 3rem;
     }
+
     .banner-text div:nth-child(2) {
         font-size: 1.75rem;
         width: 70%;
@@ -743,20 +803,25 @@ a:hover {
         border-radius: 0.75rem;
         padding: 5rem 1rem;
     }
+
     .aiTool-wrap h2.title {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
+
     .search-bar {
         margin-bottom: 1rem;
     }
+
     .sortBy-btn {
         order: 2;
     }
+
     .catrgory-group {
         order: 3;
         margin-top: 1rem;
     }
+
     .catrgory-group .btn-light {
         margin: 0 0.4rem;
     }
@@ -764,34 +829,44 @@ a:hover {
     .secondary-nav {
         flex-direction: column-reverse;
     }
+
     .secondary-nav .logo {
         width: 240px;
         margin-bottom: 2rem;
     }
+
     .secondary-nav ul a {
         font-size: 3rem;
     }
+
     .our-price {
         margin: 7.5rem 0;
     }
+
     .our-price .title {
         font-size: 1.25rem;
     }
+
     .price-list {
         margin-top: 1rem;
     }
+
     .box-content {
         min-height: 175px;
     }
+
     .terms-content {
         margin-top: 7.5rem;
     }
-    .terms-content > .title {
+
+    .terms-content>.title {
         margin-bottom: 3rem;
     }
+
     .terms-content ul li {
         font-size: 1rem;
     }
+
     .terms-content ul li .title {
         font-size: 2rem;
     }
