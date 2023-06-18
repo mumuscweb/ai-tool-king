@@ -42,16 +42,14 @@ a:hover {
 }
 
 .to-top {
-    position: fixed;
-    bottom: 3%;
-    right: 3%;
-    padding: 5px 10px;
+    margin-left: auto;
     cursor: pointer;
     background: rgb(0 0 0 / 57%);
     border-radius: 5px;
-    display: none;
 }
-
+.title {
+    font-weight: 900;
+}
 
 /*---- header ----*/
 .header {
@@ -69,6 +67,12 @@ a:hover {
 .logo {
     width: 245px;
 }
+
+.logo > span {
+    font-size: 0;
+    color: transparent;
+}
+
 
 .offcanvas {
     width: 100% !important;
@@ -119,8 +123,6 @@ a:hover {
 
 /*---- index ----*/
 .banner-text {
-    font-size: 7.5rem;
-    font-weight: 900;
     line-height: 1.2;
     margin-top: 3rem;
     margin-bottom: 7.5rem;
@@ -128,12 +130,16 @@ a:hover {
     flex-direction: column;
 }
 
+.banner-text h2 {
+    font-size: 7.5rem;
+    font-weight: 900;
+}
 .banner-text .btn {
     font-size: 1.25rem;
     padding: 1.25rem 2.5rem;
 }
 
-.banner-text div:nth-child(2) {
+.banner-text h2:nth-child(2) {
     font-size: 3rem;
     width: 50%;
     margin-left: auto;
@@ -191,7 +197,9 @@ a:hover {
 .our-service {
     margin: 8rem auto;
 }
-
+.service-content {
+    margin: 0;
+}
 .service-content .title {
     font-size: 2rem;
     font-weight: 900;
@@ -229,7 +237,9 @@ a:hover {
 .our-partner {
     margin: 8em auto;
 }
-
+.our-partner .title {
+    font-weight: 900;
+}
 
 /* partner slider start*/
 .partner-slider {
@@ -368,7 +378,28 @@ a:hover {
     font-size: 14px;
 }
 
+/* swiper customize */
+.swiper-slide {
+    height: auto;
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+}
+.swiper-pagination-bullet {
+    background: #525252;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+}
 
+/* AI Tool */
 .aiTool-wrap {
     background-color: #fff;
     max-width: 1920px;
@@ -424,18 +455,47 @@ a:hover {
     margin-bottom: 2.5rem;
 }
 
-.filter-btn .dropdown-toggle::after {
-    display: none;
-}
-
 .filter-bar .btn-outline-dark {
     border-color: #f2f2f2;
     padding: 1.25rem 2.5rem;
 }
+.filter-bar .dropdown-menu {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 1rem;
+    padding: 20px 0;
+}
+.filter-bar .dropdown-menu .dropdown-item {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span.material-symbols-outlined {
+    font-size: 20px;
+}
+.filter-bar .dropdown-menu .dropdown-header,
+.filter-bar .dropdown-menu .dropdown-divider {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.filter-bar .dropdown-menu .dropdown-divider {
+    padding-bottom: 0.7rem;
+    border-color: #eee;
+}
 
+.filter-btn .dropdown-toggle::after {
+    display: none;
+}
+.filter-btn .dropdown-menu {
+    width: 240px;
+    
+}
 .catrgory-group {
     display: flex;
-    overflow: scroll;
     margin: 0 auto;
     max-width: 80ch;
 }
@@ -523,6 +583,7 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     margin-top: 2em;
+    flex-wrap: wrap;
 }
 
 .page-item:first-child .page-link,
@@ -650,8 +711,15 @@ a:hover {
     font-weight: 400;
     color: #aaa;
 }
-
-
+.start-link .btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+.start-link .btn-link:hover,
+.start-link .btn-link:active,
+.start-link .btn-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
 
 .terms-content {
     margin: 10rem 0 5rem;
@@ -700,6 +768,7 @@ a:hover {
 .qna-button {
     width: 100%;
     font-size: 1.25rem;
+    font-weight: 900;
     text-align: left;
     color: #fff;
     background-color: transparent;
@@ -766,22 +835,24 @@ a:hover {
     .footer-title {
         margin-bottom: 2.25rem;
     }
-
     .banner-text {
-        font-size: 3rem;
         margin-bottom: 8rem;
+    }
+    .banner-text h2 {
+        font-size: 3rem;
     }
 
     .banner-text .btn {
         margin-top: 3rem;
     }
 
-    .banner-text div:nth-child(2) {
+    .banner-text h2:nth-child(2) {
         font-size: 1.75rem;
         width: 70%;
     }
 
-    .service-content .title {
+    .service-content .title,
+    .our-partner .title {
         font-size: 1.25rem;
     }
 
@@ -815,6 +886,10 @@ a:hover {
 
     .sortBy-btn {
         order: 2;
+    }
+
+    .catrgory-group {
+        overflow-x: scroll;
     }
 
     .catrgory-group {
@@ -869,6 +944,20 @@ a:hover {
 
     .terms-content ul li .title {
         font-size: 2rem;
+    }
+
+    .social-contact {
+        order: 3;
+    }
+
+    .partner-slider:after, .partner-slider:before {
+        width: 90px;
+    }
+    .partner-list {
+        margin-top: 3rem;
+    }
+    .qna-item {
+        padding: 1.25rem;
     }
 
 }
